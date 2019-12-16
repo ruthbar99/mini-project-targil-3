@@ -1,12 +1,28 @@
 ﻿<Window x:Class="dotNet5780_03_5114_7735.MainWindow"
+        
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dotNet5780_03_5114_7735"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="צימרים יוקרתיים בישראל" Height="640" Width="800" FontFamily="Cambria" FontSize="35">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="UpGrid" HorizontalAlignment="Stretch" Height="auto" 
+        Grid.Row="0"
+        VerticalAlignment="Stretch" Width="auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="396*"/>
+                <ColumnDefinition Width="397*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tbHostName" Grid.Column="1" HorizontalAlignment="Stretch" Text="here will be the HotingName" FontFamily="Cambria" FontSize="28" VerticalAlignment="Stretch" TextChanged="TbHostName_TextChanged" Margin="0,0,-0.667,0" />
+            <ComboBox x:Name="cbHostList" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="CbHostList_SelectionChanged" Grid.ColumnSpan="2" Margin="0,0,396.333,0" />
+        </Grid>
     </Grid>
 </Window>
