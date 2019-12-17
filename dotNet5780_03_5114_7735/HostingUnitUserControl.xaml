@@ -15,7 +15,7 @@
         <TextBox x:Name="tbUnitName" HorizontalAlignment="Left" Height="33" Margin="44,22,0,0" TextWrapping="Wrap" Text="{Binding Path=UnitName}" VerticalAlignment="Top" Width="165" TextChanged="TbUnitName_TextChanged"/>
         <Label Content="מספר חדרים" HorizontalAlignment="Left" Margin="93,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.546,-0.308" FontFamily="Footlight MT Light" FontSize="24" Height="35" Width="145"/>
         <TextBox x:Name="tbRooms" HorizontalAlignment="Left" Height="35" Margin="26,83,0,0" TextWrapping="Wrap" Text="{Binding Path=Rooms}" VerticalAlignment="Top" Width="45" TextChanged="TbHostName_TextChanged"/>
-        <CheckBox x:Name="IsSwimigPool" Content="בריכה" HorizontalAlignment="Left" Margin="93,147,0,0" VerticalAlignment="Top" FontFamily="Footlight MT Light" IsChecked="{Binding Path=IsSwimingPool}" Height="35" Width="76"/>
+        <CheckBox x:Name="IsSwimmigPool" Content="בריכה" HorizontalAlignment="Left" Margin="93,147,0,0" VerticalAlignment="Top" FontFamily="Footlight MT Light" IsChecked="{Binding Path=IsSwimmingPool}" Height="35" Width="76"/>
         <Viewbox x:Name="vbCalendar" Grid.Column="1" HorizontalAlignment="Left" Height="130" Margin="44,10,0,0" VerticalAlignment="Top" Width="192" Stretch="Fill">
             <Viewbox.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

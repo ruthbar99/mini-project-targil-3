@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="396*"/>
                 <ColumnDefinition Width="397*"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="tbHostName" Grid.Column="1" HorizontalAlignment="Stretch" Text="here will be the HotingName" FontFamily="Cambria" FontSize="28" VerticalAlignment="Stretch" TextChanged="TbHostName_TextChanged" Margin="0,0,-0.667,0" />
+            <TextBox x:Name="tbHostName" Grid.Column="1" HorizontalAlignment="Stretch" Text="{Binding Path=HostName}" FontFamily="Cambria" FontSize="28" VerticalAlignment="Stretch" TextChanged="TbHostName_TextChanged" Margin="0,0,-0.667,0" />
             <ComboBox x:Name="cbHostList" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="CbHostList_SelectionChanged" Grid.ColumnSpan="2" Margin="0,0,396.333,0" />
         </Grid>
     </Grid>
